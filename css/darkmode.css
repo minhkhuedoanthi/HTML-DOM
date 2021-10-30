@@ -1,0 +1,145 @@
+@font-face { 
+    font-family: headerfont;
+    src:url(file:///E:/font/SFUFuturaLightOblique.TTF);
+}
+@font-face {
+    font-family: titlefont;
+    src:url(file:///E:/font/SFUFuturaBold.TTF);
+}
+@font-face {
+    font-family: bigtextfont;
+    src:url(file:///E:/font/SFUFuturaHeavy.TTF);
+}
+@font-face {
+    font-family: textfont;
+    src:url(file:///E:/font/SFUFuturaRegular.TTF);
+}
+.whitetext {
+    font-size: 12px;
+    font-family: textfont;
+    color: black;
+}
+.text {
+    font-family: textfont;
+}
+.bigtext {
+    font-family: bigtextfont;
+}
+.Title {
+    font-family: titlefont;
+    font-size: 30px;
+    font-weight: 20px;
+    color: rgb(33, 44, 143);
+    text-align: center;
+}
+.Header {
+    font-family:headerfont;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+.topnav {
+    width:100%;;
+    font-family: bigtextfont;
+    overflow: hidden;
+    background-color:rgb(112, 190, 209);
+ }
+.topnav span {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+.topnav a {
+    float: left;
+    justify-content: space-around;
+    color: lightblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color:midnightblue;
+    color: lightblue;
+} 
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      width: 40px;
+      float: right;
+      display: block;
+    }
+    .hamicon{
+        width: 100% ;
+        float: right !important;
+        display: block !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive a.icon {
+        position:absolute !important;
+        right: 0;
+        top: 0;
+    }
+}
+.hamicon {
+    display: none;
+}
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    background-color:midnightblue;
+    justify-content: center !important;
+    padding: 20px !important;
+    align-items:center !important;
+    font-family: textfont;
+    color: lightblue;
+}
+.image{
+    width: 60vmin;
+    padding: 30px;
+}
+.LightSwitch {
+    float: right;
+    margin-right: 20px;
+    position: sticky;
+    background-color: white;
+    border:none;
+    font-family: textfont;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 12px;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+}
+.LightSwitch:hover {
+    transition-duration: 0.4s;
+    background-color:cornflowerblue; /* Green */
+    border: none; /* viền của nút */
+}
+.scrollToTop{
+    width: 40px;
+    border-radius: 50%;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+}
