@@ -2,11 +2,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link id = "light" rel="stylesheet" href="../css/responsive_navbar_dropdown.css">
-
-
-<style>
-
-</style>
 </head>
 
 <body onresize="resize()">
