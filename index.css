@@ -1,0 +1,146 @@
+html { 
+    background-image: url("../images/background-image.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size:100%;
+    background-position-x: center ;
+    background-position-y: center ;
+
+}
+@media only screen and (max-width: 1000px) {
+    .Left{
+        width: 100%;
+    }
+    .Right{
+        border-radius: 20px;
+        padding:30px 50px;
+        background: #ffffff52;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Regular !important;
+        color:white;
+        height: calc(100vh-100);
+        width: 100%;
+    }
+}
+@font-face {
+    font-family: "Regular";
+    src: url("fonts/SFUFuturaRegular.TTF") format('truetype');
+}
+@font-face {
+    font-family: "Bold";
+    src: url("../fonts/SFUFuturaBold.TTF") format('truetype');
+}
+@font-face {
+    font-family: "Light";
+    src: url("fonts/SFUFuturaLight.TTF");
+}
+.title{
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-family: Bold;
+    font-size: 5vw;
+    color: white;
+    background: none !important;
+}
+.title:hover p{
+    display: none !important;
+}
+.title::before{
+    content: "Chúng tôi là ai?";
+}
+.title:hover:before{
+    content: "AzureAms Programming Club";
+    font-size: 60%;
+}
+body{
+    padding: 10%;
+    background: none !important;
+}
+.Container1{
+    height: calc(100vh-50px);
+    background:transparent;
+    border-radius: 20px;
+}
+.Left{
+    /*padding: 50px;
+    */
+    float:left;
+    border-radius: 20px;
+    padding:4%;
+    background: #ffffff52;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Regular !important;
+    color:white;
+    height: calc(100vh-100);
+    width: 70%;
+}
+.gap{
+    float:left;
+    background: none;
+    color:transparent;
+    height: calc(100vh-100);
+    width: 1%;
+}
+.Right{
+    float:left !important;
+    border-radius: 20px;
+    padding:2% 4%;
+    background: #ffffff52;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Regular !important;
+    color:white;
+    height: calc(100vh-100);
+    width: 28%;
+}
+.Projects{
+    text-align: center;
+    padding-bottom: 2%;
+    font-family: Bold;
+    font-size: 2vw;
+}
+.Img1{
+    width:100%;
+    border-radius: 8%;
+}
+.Img1:hover {
+    transform: scale(1.1);
+}
+.CoreImg{
+    width: 50%;
+    border-radius: 50%;
+}
+.CoreTeam{
+    margin-top: 10%;
+    float:left;
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+.CoreTeam::-webkit-scrollbar{
+    display: none;
+} 
+.CoreTeam::-webkit-scrollbar-thumb {
+  background: none; 
+}
+.CoreTeam .CoreItem{
+    float:right;
+    min-width: 300px;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    background-color: none;
+}
+.CoreTeam .CoreItem .CoreBigtext{
+    font-family: Regular;
+    text-align: center;
+    color:white;
+    font-size:170%;
+}
+.CoreTeam .CoreItem .CoreSmalltext{
+    font-family: Light;
+    text-align: center;
+    color:rgb(175, 177, 209);
+    font-size: 150%;
+}
